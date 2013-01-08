@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_fondo" >
+    
+    <ScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        >
+        
+        <RelativeLayout
+            android:paddingTop="150dp"
+            android:layout_width="220dp"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:layout_gravity="center"
+		    >
+            <LinearLayout
+			    android:focusable="true" android:focusableInTouchMode="true"
+			    android:layout_width="0px" android:layout_height="0px"/>
+            <TextView 
+                android:id="@+id/txt_usuario"
+                android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:textColor="@color/verde_texto_comun"
+		    	android:text="@string/usuario_"
+		    	android:textSize="14dp"/>
+            
+            <EditText 
+                android:layout_below="@id/txt_usuario"
+                android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:background="@drawable/txtfield"
+		    	android:layout_marginTop="10dp"
+		    	android:textSize="14dp"
+		    	android:paddingLeft="4dp"
+		    	android:inputType="textEmailAddress"
+		    	android:hint="@string/mail"
+		    	android:id="@+id/et_usuario"
+		    	android:nextFocusUp="@id/et_usuario" 
+		    	android:nextFocusLeft="@id/et_usuario"
+                />
+            
+            <TextView 
+                android:id="@+id/txt_password"
+                android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:textColor="@color/verde_texto_comun"
+		    	android:paddingTop="15dp"
+		    	android:text="@string/contrase_a_"
+		    	android:textSize="14dp"
+		    	android:layout_below="@+id/et_usuario"/>
+            
+            <EditText 
+                android:layout_below="@id/txt_password"
+                android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:background="@drawable/txtfield"
+		    	android:layout_marginTop="10dp"
+		    	android:paddingLeft="4dp"
+		    	android:hint="@string/contrase_a"
+		    	android:textSize="14dp"
+		    	android:inputType="textPassword"
+		    	android:id="@+id/et_password"
+		    	android:nextFocusUp="@id/et_password" 
+		    	android:nextFocusLeft="@id/et_password" 
+                />
+            
+            <RelativeLayout 
+                android:paddingTop="60dp"
+                android:id="@+id/layout_botones"
+                android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+                android:layout_below="@id/et_password"
+                android:orientation="horizontal"
+                >
+                
+                <ImageButton 
+                    android:id="@+id/btn_ingresar"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_b_ingresar"/>
+                
+                <ImageButton 
+                    android:id="@+id/btn_registro"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_b_registro"/>
+            </RelativeLayout>
+            
+            <ImageButton 
+                	android:id="@+id/btn_invitado"
+                	android:layout_below="@id/layout_botones"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/login_b_invitado"/>
+            
+            <TextView 
+                	android:id="@+id/txt_invitado_advertencia"
+                	android:layout_below="@id/btn_invitado"
+                	android:paddingTop="20dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textSize="12dp"
+                    android:text="@string/invitado_leyenda"
+                    android:textColor="@color/verde_texto_login"/>
+            
+        </RelativeLayout>
+    </ScrollView>
+    
+
+</LinearLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/verde_background">
+
+    <RelativeLayout
+            android:layout_width="250dp"
+		    android:layout_height="wrap_content"
+		    android:layout_marginBottom="20dp"
+		    android:orientation="vertical"
+		    android:layout_gravity="center_horizontal"
+		    >
+		    
+      	<LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentTop="true"
+		        android:paddingTop="1dp"
+		        android:layout_marginTop="10dp"
+		        android:id="@+id/logo_home"
+		        android:gravity="center_horizontal">
+		        <ImageView
+		            android:layout_width="wrap_content"
+		       		android:layout_height="wrap_content"
+		       		android:src="@drawable/logo_home"/>
+	    </LinearLayout> 
+		    
+        <RelativeLayout
+            android:id="@+id/layout1"
+            android:layout_below="@id/logo_home"
+            android:layout_marginTop="20dp"
+           	android:layout_width="fill_parent"
+	   		android:layout_height="wrap_content">
+            
+            <LinearLayout 
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+	            <ImageButton 
+	                android:id="@+id/btn_capturar"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/home_b_escanear"/>
+	            <TextView 
+	                android:layout_height="wrap_content"
+	                android:layout_width="match_parent"
+	                android:textSize="12dp"
+	                android:gravity="center"
+	                android:textColor="@color/verde_texto_comun"
+	                android:text="Escanear código"/>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_alignParentRight="true" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+	            <ImageButton 
+	                android:id="@+id/btn_ingresar_codigo"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/home_b_ingresar"/>
+	            <TextView 
+	                android:layout_height="wrap_content"
+	                android:layout_width="match_parent"
+	                android:textSize="12dp"
+	                android:gravity="center"
+	                android:textColor="@color/verde_texto_comun"
+	                android:text="Ingresar código"/>
+            </LinearLayout>
+            
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/layout2"
+           	android:layout_width="fill_parent"
+	   		android:layout_height="wrap_content"
+	   		android:layout_marginTop="40dp"
+	   		android:layout_below="@id/layout1">
+            
+            <LinearLayout 
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+	            <ImageButton 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:id="@+id/btn_centros_reciclaje"
+	                android:background="@drawable/home_b_mapa"/>
+	            <TextView 
+	                android:layout_height="wrap_content"
+	                android:layout_width="match_parent"
+	                android:textSize="12dp"
+	                android:gravity="center"
+	                android:textColor="@color/verde_texto_comun"
+	                android:text="Mapa: centro de reciclaje"/>
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+	            <ImageButton 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:id="@+id/btn_recolectores"
+	                android:background="@drawable/home_b_gorra"/>
+	            <TextView 
+	                android:layout_height="wrap_content"
+	                android:layout_width="match_parent"
+	                android:textSize="12dp"
+	                android:gravity="center"
+	                android:textColor="@color/verde_texto_comun"
+	                android:text="Mapa: recolectores urbanos"/>
+            </LinearLayout>
+            
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/layout3"
+           	android:layout_width="fill_parent"
+	   		android:layout_height="wrap_content"
+	   		android:layout_marginTop="40dp"
+			android:layout_below="@id/layout2">
+            
+            <LinearLayout 
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+	            <ImageButton 
+	                android:id="@+id/btn_catalogo"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/home_b_promo"/>
+	            <TextView 
+	                android:layout_height="wrap_content"
+	                android:layout_width="match_parent"
+	                android:gravity="center"
+	                android:textSize="12dp"
+	                android:textColor="@color/verde_texto_comun"
+	                android:text="Catálogo de promociones"/>
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+	            <ImageButton 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:id="@+id/btn_mi_cuenta"
+	                android:background="@drawable/home_b_cuenta"/>
+	            <TextView 
+	                android:layout_height="wrap_content"
+	                android:layout_width="match_parent"
+	                android:textSize="12dp"
+	                android:gravity="center"
+	                android:textColor="@color/verde_texto_comun"
+	                android:text="Mi cuenta"/>
+            </LinearLayout>
+            
+        </RelativeLayout>
+        
+    </RelativeLayout>
+
+</ScrollView>

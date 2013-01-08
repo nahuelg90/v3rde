@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/verde_background" 
+    android:gravity="center_horizontal">
+    <ImageView 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/logo_catalogo"
+          android:layout_marginTop="5dp"
+          android:id="@+id/logo_cuenta"/>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+   			android:layout_height="fill_parent"
+   			android:layout_marginTop="3dp"
+    		android:background="@color/verde_fondo_botones"
+   			android:orientation="vertical"
+   			>   
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="@color/verde_texto_comun"
+              android:textSize="14dp"
+              android:padding="5dp"
+              android:text="Revisá todos los detalles de tu cuenta:"
+              />
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="3dp">
+              
+              <TextView
+	              android:layout_width="80dp"
+	              android:layout_height="wrap_content"
+	              android:textColor="@color/verde_texto_comun"
+	              android:textSize="14dp"
+	              android:paddingLeft="5dp"
+	              android:text="Nombre:"
+	              />
+              
+              <TextView
+	              android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:id="@+id/cuenta_nombre"
+	              android:textColor="@color/verde_texto_comun"
+	              android:textSize="14dp"
+	              android:layout_marginLeft="10dp"
+	              />
+              
+          </LinearLayout>
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="3dp">
+              
+              <TextView
+	              android:layout_width="80dp"
+	              android:layout_height="wrap_content"
+	              android:textColor="@color/verde_texto_comun"
+	              android:textSize="14dp"
+	              android:paddingLeft="5dp"
+	              android:text="Apellido:"
+	              />
+               <TextView
+	              android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:id="@+id/cuenta_apellido"
+	              android:textColor="@color/verde_texto_comun"
+	              android:textSize="14dp"
+	              android:layout_marginLeft="10dp"
+	              />
+          </LinearLayout>
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="3dp">
+              
+              	<TextView
+	              android:layout_width="80dp"
+	              android:layout_height="wrap_content"
+	              android:textColor="@color/verde_texto_comun"
+	              android:textSize="14dp"
+	              android:paddingLeft="5dp"
+	              android:text="Mail:"
+	              />
+              	
+              	 <TextView
+	              android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:id="@+id/cuenta_mail"
+	              android:textColor="@color/verde_texto_comun"
+	              android:textSize="14dp"
+	              android:layout_marginLeft="10dp"
+	              />
+          </LinearLayout>
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="3dp">
+              
+              	<TextView
+	              android:layout_width="80dp"
+	              android:layout_height="wrap_content"
+	              android:textColor="@color/verde_texto_comun"
+	              android:textSize="14dp"
+	              android:paddingLeft="5dp"
+	              android:text="Localidad:"
+	              />
+              	
+              	 <TextView
+	              android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:id="@+id/cuenta_localidad"
+	              android:textColor="@color/verde_texto_comun"
+	              android:textSize="14dp"
+	              android:layout_marginLeft="10dp"
+	              />
+          </LinearLayout>
+          
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="3dp">
+              
+              	<TextView
+	              android:layout_width="80dp"
+	              android:layout_height="wrap_content"
+	              android:textColor="@color/verde_texto_comun"
+	              android:textSize="14dp"
+	              android:paddingLeft="5dp"
+	              android:text="Puntos:"
+	              />
+              	
+              	 <TextView
+	              android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:id="@+id/cuenta_puntos"
+	              android:textColor="@color/verde_texto_comun"
+	              android:textSize="14dp"
+	              android:layout_marginLeft="10dp"
+	              />
+          </LinearLayout>
+          
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="@color/verde_texto_comun"
+              android:textSize="14dp"
+              android:padding="5dp"
+              android:text="Cupones listos para cambiar:"
+              />
+          
+          <ScrollView
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content">
+              
+              <LinearLayout
+                  android:layout_width="fill_parent"
+                  android:id="@+id/cupones_usuario"
+              	  android:layout_height="wrap_content"
+              	  android:orientation="vertical">
+              	  
+           											
+              </LinearLayout>
+          </ScrollView>
+        </LinearLayout>
+
+</LinearLayout>

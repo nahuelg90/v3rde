@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/verde_background" 
+    android:gravity="center_horizontal">
+    <ImageView 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/logo_catalogo"
+          android:layout_marginTop="5dp"
+          android:id="@+id/logo_catalogo"/>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+   			android:layout_height="fill_parent"
+   			android:layout_marginTop="3dp"
+    		android:background="@color/verde_fondo_botones"
+   			android:orientation="vertical"
+   			>   
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="@color/verde_texto_comun"
+              android:textSize="14dp"
+              android:padding="5dp"
+              android:text="Este es el catálogo de promociones, juntá puntos y cambialos por las siguientes promociones:"
+              />
+          
+          <ScrollView
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content">
+              
+              <LinearLayout
+                  android:layout_width="fill_parent"
+                  android:id="@+id/catalogo_list_content"
+              	  android:layout_height="wrap_content"
+              	  android:orientation="vertical">
+              	  
+           											
+              </LinearLayout>
+          </ScrollView>
+        </LinearLayout>
+
+</LinearLayout>

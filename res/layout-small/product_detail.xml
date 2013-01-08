@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/verde_background">
+    
+    <ScrollView
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content">
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content">
+         
+            <LinearLayout
+                 android:id="@+id/layout_botones"
+            	 android:layout_width="match_parent"
+    			 android:layout_height="wrap_content"
+    			 android:orientation="horizontal"
+    			 android:weightSum="3">
+                
+                 <com.proyecto.v3rd.ui.view.ReverseButton android:layout_width="0dip" 
+		              android:layout_height="match_parent"
+		              android:id="@+id/btn_infografia"
+		              android:text="Infografía"
+		              android:textSize="14sp"
+		              android:background="@color/verde_background"
+		              android:textColor="@color/verde_texto_comun"
+		              android:layout_weight="1" />
+                  <com.proyecto.v3rd.ui.view.ReverseButton android:layout_width="0dip" 
+		              android:layout_height="match_parent"
+		              android:id="@+id/btn_3r"
+		              android:text="3R"
+		              android:textSize="14sp"
+		              android:background="@color/verde_fondo_botones"
+		              android:textColor="@color/verde_texto_comun"
+		              android:layout_weight="1" />
+                   <com.proyecto.v3rd.ui.view.ReverseImageButton android:layout_width="0dip" 
+		              android:layout_height="wrap_content"
+		              android:background="@color/verde_fondo_botones"
+		              android:id="@+id/btn_producto_reciclaje"
+		              android:src="@drawable/google_maps_screenlet"
+		              android:textSize="14sp"
+		              android:layout_weight="1" />
+                   
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/layout_botones"
+               	android:layout_centerInParent="true">
+                
+                <ImageView 
+                    android:layout_width="wrap_content" 
+                    android:padding="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/info_prueba"/>
+            </LinearLayout>
+            
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

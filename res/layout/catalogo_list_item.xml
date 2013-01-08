@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+													android:layout_height="wrap_content"
+													android:paddingLeft="2dp"
+													android:paddingRight="2dp"
+													android:paddingTop="1dp"
+													android:paddingBottom="1dp"
+													android:layout_marginTop="1dp"
+													android:layout_marginBottom="1dp"
+													android:background="@color/verde_background">
+												
+												    <RelativeLayout
+												        android:layout_width="fill_parent"
+												        android:layout_height="wrap_content"
+												        android:background="@color/verde_fondo_botones"
+												        android:paddingBottom="10dp"
+												        android:paddingLeft="5dp"
+												        android:paddingRight="5dp"
+												        android:paddingTop="10dp" >
+												
+												        
+
+												        <Button
+												            android:id="@+id/btn_canjear"
+												            android:layout_width="wrap_content"
+												            android:layout_height="wrap_content"
+												            android:layout_alignParentRight="true"
+												            android:background="@color/verde_background"
+												            android:textColor="@color/verde_texto_login"
+												            android:padding="5dp"
+												            android:text="Canjear"
+												            android:layout_centerVertical="true"
+												            android:textSize="14dp" />
+												        
+												         
+												         <com.proyecto.v3rd.ui.view.AsyncImageView 
+												             android:layout_alignParentLeft="true"
+												             android:layout_width="70dp"
+												             android:layout_height="70dp"
+												             android:id="@+id/logo_comerciante"
+												             />
+												        
+												         <LinearLayout 
+												             android:layout_width="fill_parent"
+												             android:layout_height="wrap_content"
+												             android:layout_toLeftOf="@id/btn_canjear"
+												             android:layout_toRightOf="@id/logo_comerciante"
+												             android:layout_marginRight="10dp"
+												             android:layout_marginLeft="10dp"
+												             android:orientation="vertical">
+												             <TextView 
+												                android:id="@+id/tv_titulo"
+													            android:layout_width="wrap_content"
+													            android:layout_height="wrap_content"
+													            android:textColor="@color/verde_texto_login"
+													            android:text="Hoyts"
+													            android:textSize="14dp"/>
+												             <TextView 
+												                android:id="@+id/tv_descripcion"
+													            android:layout_width="wrap_content"
+													            android:layout_height="wrap_content"
+													            android:textColor="@color/verde_texto_login"
+													            android:text="2x1 en entradas todos los dias"
+													            android:textSize="12dp"/>
+												             <TextView 
+												                android:id="@+id/tv_puntosnecesarios"
+												                android:layout_marginTop="5dp"
+													            android:layout_width="wrap_content"
+													            android:layout_height="wrap_content"
+													            android:textColor="@color/verde_texto_login"
+													            android:text="Puntos: 200"
+													            android:textSize="12dp"/>
+												             
+												         </LinearLayout>
+												        
+												    </RelativeLayout>
+												
+												</LinearLayout>
